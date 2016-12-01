@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brad's Template</title>
+	
+	<!-- JQuery. -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+		
+		<!-- Animate Stylings. -->
+		<link href="css/animate.css" rel="stylesheet" />
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		
+</head>
+	<body>
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-picture" href="index.html" style="color: #083a5b"><img src="images/logo.png" alt="logo" id="logo"></a><!-- Img src: <a class="navbar-brand page-scroll" href="index.html" style="color: #083a5b">Brad's BBQ Pit</a> -->
+                <a class="navbar-brand logo-banner" href="index.html">Brad's Classic Cuisine</a>
+            </div><!-- End of navbar-header. -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#menu">menu</a></li>
+					<li><a class="page-scroll" href="#features_container">your palace</a></li>
+                    <li><a class="page-scroll" href="#videos_container">learn</a></li>
+                    <li><a class="page-scroll" href="#locations_container">location</a></li>
+                    <li class="hidden"></li>
+                </ul>
+            </div><!-- End of navbar-collapse. -->
+        </div><!-- End of container-fluid class. -->
+    </nav>
+	
+	
+	<div id="header" class="row">		
+		<!-- Full Page Image Background. -->
+		<div class="header-container">
+			<div class="video-container">
+				<video preload="true" autoplay="autoplay" loop="loop" volume="0" poster="jumbotron_image.jpg">
+					<source src="videos/restaurant.mp4" type="video/mp4">
+					<source src="videos/restaurant.webm" type="video/webm">
+					<source src="videos/restaurant.ogv" type="video/ogg">
+				</video><!-- End of video. -->
+			</div><!-- End of video-container. -->
+		</div><!-- End of header-container. -->
+	</div><!-- End of header. -->
+
+	<div class="container" id="main">
+		<div id="contents">		
+			<!-- Restaurant Menus Section. -->
+			<div class="col-md-12" id="menu">
+				<h2 class="header"><img src="decorative-line.png"><br/><span class="dropcap">R</span>estaurant <span class="dropcap">M</span>enu</h2>
+				<div class="row" id="extraStuff">
+					<div class="col-sm-6">
+						<h3>Restaurant Menu</h3>
+						<div class="tabbable">
+							<ul class="nav nav-tabs">
+								<li class="active lunch-tab"><a href="#tab1" data-toggle="tab">Lunch Menu</a></li>
+								<li class="lunch-tab"><a href="#tab2" data-toggle="tab">Dinner</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab1">
+									<h4 class="menu-tab-header">Let's Have Lunch!</h4>
+									<img src="images/tuna.jpg" class="thumbnail pull-left"><!-- Image src: <a href="http://www.freepik.com/free-photo/fusion-cuisine-with-green-salad_903065.htm">Designed by Freepik</a> -->
+									<p class="menu-tab-prose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p class="menu-tab-prose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										
+									<hr>
+										
+									<!-- The Modal -->
+									<a href="#myModal1" role="button" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-hand-up click_button"> Click for Lunch Menu</span></a>
+									<div class="modal fade" id="myModal1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal_lunch">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button class="close pull-left" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Lunch Menu Entrées</h4>
+													<h5 class="entress_desc"><i>All served with mashed potatoes, vegetable, and house salad</i></h5><br/>
+												</div><!-- End of modal-header. -->
+												<div class="modal_body modal-body">
+													<!-- lunch menu entrées-->
+													<div id="menu_entrees">
+														<b>Peppercorn Crusted Tuna </b><span class="menu_price">16</span><br/>
+														<i>Baked blue cheese and mushroom broth</i><br/>
+														<br/>
+														<b>Stuffed Fillet of Flounder </b><span class="menu_price">16</span><br/>
+														<i>Jumbo lump crabmeat</i><br/>
+														<br/>
+														<b>Stuffed Salmon </b><span class="menu_price">16</span><br/>
+														<i>Stuffed with honey goat cheese, spinach, and fire-roasted sweet bell peppers</i>
+														<span class="menu_price">16</span><br/>
+														<br/>
+														<b>Baked Chicken Parmesan </b><span class="menu_price">16</span><br/>
+														<br/>
+														<b>Blackened Ahi Tuna </b><span class="menu_price">16</span><br/>
+														<br/>
+														<b>Pistachio Basil Butter Crusted Salmon Fillet </b><span class="menu_price">16</span><br/>
+														<br/>
+														<b>Jumbo Lump Crab Cake </b><span class="menu_price">18</span><br/>
+														<i>Stuffed with jumbo chunks and served with a roasted red pepper aioli</i><br/>
+														<br/>
+														<b>Honey Jalapeno Sea Scallops </b><span class="menu_price">18</span><br/>
+														<i>Stuffed with crab meat</i><br/>
+														<br/>
+														<b>Barbecued Chicken Breast </b><span class="menu_price">14</span><br/>
+														<br/>
+														<b>Blackened Salmon Fillet </b><span class="menu_price">16</span><br/>
+														<br/>
+														<b>Crab & Asparagus Baked Casserole </b><span class="menu_price">16</span><br/>
+														<i>Topped with monterey jack cheese</i><br/>
+														<br/>
+														<b>Broiled Combination Shrimp, Scallops, and Salmon </b><span class="menu_price">18</span>
+														
+													</div><!-- End of menu_entrees. -->
+												</div><!-- End of modal-body. -->
+											</div><!-- End of modal-content. -->
+										</div><!-- End of modal-dialog_lunch id. -->
+									</div><!-- End of modal fade. -->
+								</div><!-- End of tab-pane active.  -->
+									
+								<div class="tab-pane" id="tab2">
+									<h4 class="menu-tab-header">Dinner's Ready!!</h4>
+									<img src="images/pasta.jpg" class="thumbnail pull-right"><!-- Image source: <a href="http://www.freepik.com/free-photo/tasty-italian-pasta-dish_854233.htm">Designed by Freepik</a> -->
+								
+									<p class="menu-tab-prose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p class="menu-tab-prose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									
+									<hr>
+										
+									<!-- The Modal -->
+									<a href="#myModal2" role="button" class="btn btn-danger" data-toggle="modal"><span class="glyphicon glyphicon-hand-up click_button"> Click for Dinner Menu!</span></a>
+									<div class="modal fade" id="myModal2" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal_dinner">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button class="close pull-left" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title"> Dinner Menu Entrées</h4>
+												</div>
+												<div class="modal_body modal-body">
+													<!-- dinner menu entrées-->
+													<div id="menu_entrees" class="specialty_desc">
+														<h5 class="specialty_desc" ><b>Pasta </b></h5>
+															<b>Sautéed Seafood Chipino in Marinara </b><span class="menu_price">31</span><br>
+															<i>Shrimp, scallops, clams, dungeness, and salmon over fresh linguine</i><br/>
+															<br/>
+															<b>Jumbo Lobster Ravioli & Sea Scallops </b><span class="menu_price">33</span><br/>
+															<i>Tossed in a sun dried tomato garlic white wine sauce</i><br/>
+															<br/>
+														<h5><b>Seafood</b></h5>
+															<b>Pan Seared Wasabi Ahi Ahi </b><span class="menu_price">27</span><br>
+															<i>Served with a sesame ginger soy broth</i><br/>
+															<br/>
+															<b>Blackened Cod </b><span class="menu_price">27</span><br>
+															<i>Served with a creole mustard sauce</i><br/>
+															<br/>
+															<b>Sesame Crusted Monkfish </b><span class="menu_price">27</span><br>
+															<i>Served with a sesame ginger soy broth</i><br/>
+															<br/>
+															<b>Jamaican Jerk Grilled Seabass </b><span class="menu_price">27</span><br/>
+															<br/>
+															<b>Peppercorn Crusted Tuna </b><span class="menu_price">27</span><br>
+															<i>Topped with bleu cheese and mushroom stock</i><br/>
+															<br/>
+														<h5><b>Steaks</b></h5>
+															<b>8 oz Center Cut Filet Mignon </b><span class="menu_price">33</span><br/>
+															<br/>
+															<b>12 oz New York Strip Steak </b><span class="menu_price">29</span><br>
+															<i>Center cut of aged beef</i><br/>
+															<br/>
+															<b>Grilled Fillet of Flat Iron </b><span class="menu_price">23</span><br>
+															<i>Topped with Brandied Mushrooms</i><br/>
+															<br/>
+													</div><!-- End of specialty_desc. -->
+												</div><!-- End of modal-body. -->
+											</div><!-- End of modal-content. -->
+										</div><!-- End of modal_dinner. -->
+									</div><!-- End of modal fade. -->
+								</div><!-- End of tab-pane.  -->
+							</div><!-- End of tab-content. -->
+						</div><!-- End of tabbable. -->
+					</div><!-- End of col-sm-6. -->
+					
+					<!-- More info. -->
+					<div class="col-sm-6">
+						<h3>Signature Dishes (Restaurant Exclusive)</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+						<h4>And Now, Our Specialties...</h4>
+						<div class="list-group">
+						
+							<!-- Pescado Relleno. -->
+							<a href="#myModal3" class="list-group-item" data-toggle="modal">
+								<h3 class="list-group-item-heading">Pescado Relleno</h3>
+								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</a><!-- End of list-group-item. -->
+							<div class="modal fade" id="myModal3">
+								<div class="modal-dialog">
+									<div class="modal-content">	
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+										</div><!-- End of modal-header. -->
+										<div class="modal_body">
+											<div class="specialty_content">
+												<h4>Pescado Relleno</h4>
+												<img src="images/fish.jpg" class="thumbnail pull-left" class="specialty_picture"><!-- Image src: <a href="http://www.freepik.com/free-photo/fish-with-vegetables_913710.htm">Designed by Freepik</a> -->
+												<p class="specialty_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="specialty_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div><!-- End of specialty_content. -->
+										</div><!-- End of modal_body. -->
+									</div><!-- End of modal-content. -->
+								</div><!-- End of modal-dialog. -->
+							</div><!-- End of modal fade. -->
+							
+							<!-- Red Wine Marinated Lamb. -->
+							<a href="#myModal4" class="list-group-item" data-toggle="modal">
+								<h3 class="list-group-item-heading">Red Wine Marinated Lamb</h3>
+								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</a><!-- End of list-group-item. -->
+							<div class="modal fade" id="myModal4">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+										</div><!-- End of modal-header. -->
+										<div class="modal_body">	
+											<h4>Red Wine Marinated Lamb</h4>
+											<img src="images/lamb.jpg" class="thumbnail pull-left"><!-- Image src: <a href="http://www.freepik.com/free-photo/lamb-dish-with-garnish_874714.htm">Designed by Freepik</a>-->
+											<div class="specialty_content">
+												<p class="specialty_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="specialty_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div><!-- End of specialty_contnet. -->
+										</div><!-- End of modal_body. -->
+									</div><!-- End of modal-content. -->
+								</div><!-- End of modal-dialog. -->
+							</div><!-- End of modal fade. -->
+							
+							<!-- Three of a Kind. -->
+							<a href="#myModal5" class="list-group-item" data-toggle="modal">
+								<h3 class="list-group-item-heading">Three of a Kind</h3>
+								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</a><!-- End of list-group-item. -->
+							<div class="modal fade" id="myModal5">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+										</div><!-- End of modal-header. -->
+										<div class="modal_body">
+											<h4>Three of a Kind</h4>	
+											<img src="images/three.jpg" class="thumbnail pull-left"><!-- Image src: <a href="http://www.freepik.com/free-photo/close-up-of-vegetable-soup_910038.htm">Designed by Freepik</a> -->
+											<div class="specialty_content">
+												<p class="specialty_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="specialty_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div><!-- End of specialty_content. -->
+										</div><!-- End of modal-body. -->
+									</div><!-- End of modal-content. -->
+								</div><!-- End of modal-dialog. -->
+							</div><!-- End of modal fade. -->
+							
+						</div><!-- End of list-group. -->
+					</div><!-- End of col-sm-6. -->
+
+				</div><!-- End of extraStuff. -->
+			</div><!-- End of menu id. -->
+
+			<!-- Features Section -->
+			<div class="col-md-12" id="features_container">
+				<h2 class="header"><img src="decorative-line.png"><br/><span class="dropcap">Y</span>our <span class="dropcap">P</span>alace</h2>
+				<p class="lead">Sit eros curabitur et vel. Id sem sodales aliquet iaculis magna, dolor elit nunc ac, lorem quis massa proin sit metus. Arcu maecenas varius, ut tristique nunc et vehicula non viverra, molestie sodales, eget laoreet. </p>
+
+				<div class="row" id="features">
+					<div class="col-md-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Birthday Club</h3>
+							</div><!-- End of panel-heading. -->
+							<img src="images/birthday.jpg" alt="birthday" class="img-circle"><!-- Img src: <a href="http://www.freepik.com/free-vector/lettering-card-for-birthday_785830.htm">Designed by Freepik</a> -->
+							<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+						</div><!-- End of panel. -->
+					</div><!-- End of col-md-4 feature. -->
+
+					<div class="col-md-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Romantic Evenings</h3>
+							</div><!-- End of panel-heading. -->
+							<img src="images/wine.jpg" alt="wine" class="img-circle">
+							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.</p>
+						</div><!-- End of panel. -->
+					</div><!-- End of col-md-4 feature. -->
+							
+					<div class="col-md-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">The Arnold Classic</h3>
+							</div><!-- End of panel-heading. -->
+							<img src="images/beer.jpg" alt="beer" class="img-circle"><!-- Img src: <a href="http://www.freepik.com/free-vector/german-tradition-oktoberfest_762891.htm">Designed by Freepik</a> -->
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
+						</div><!-- End of panel. -->
+					</div><!-- End of col-md-4 feature. -->
+				</div><!-- End of features. -->
+			</div><!-- End of features_container id. -->
+			
+			<!-- Videos Section -->
+			<div class="col-md-12 row" id="videos_container">
+				<h2 class="header"><img src="decorative-line.png"><br/><span class="dropcap">L</span>earn <span class="dropcap">H</span>ow to <span class="dropcap">C</span>ook</h2>
+				<div class="row" id="videos">
+				
+					<!-- Left video. -->
+					<div class="thumbnails">
+						<div class="col-md-6">
+							<div class="thumbnail">
+								<object width="100%" height="250">
+									<param name="video" value="http://www.youtube.com/v/NOkk6xRvTHc&autoplay=0"></param>
+									<embed class="video" width="100%" height="250" src="http://www.youtube.com/v/NOkk6xRvTHc&autoplay=0"></embed>
+								</object>
+								<div class="caption">
+								<h4 class="panel-title">Make a Spanish Tortilla</h4>
+									<p>Vulputate consequat maecenas, elit amet non nec blandit dolor, semper fringilla sollicitudin mauris, nec donec cursus vitae, vel vivamus. At consectetur nibh sapien porta nonummy, adipiscing aenean sed tristique dictum fringilla.</p>
+								</div><!-- End of caption. -->
+							</div><!-- End of thumbnail. -->
+						</div><!-- End of col-6. -->
+					</div><!-- End of thumbnails. -->
+					
+					<!-- Right video. -->
+					<div class="thumbnails">
+						<div class="col-md-6">
+							<div class="thumbnail">
+								<object width="100%" height="250">
+									<param name="video" value="http://www.youtube.com/v/E6HbOTEKkSE&autoplay=0"></param>
+									<embed class="video" width="100%" height="250" src="http://www.youtube.com/v/E6HbOTEKkSE&autoplay=0"></embed>
+								</object>
+								<div class="caption">
+								<h4 class="panel-title">Make Cod in Parsley Sauce</h4>
+									<p>Dictum nec amet arcu, hymenaeos mi placerat varius in at sit, dui vehicula vel consectetuer. Lorem praesent mollis curae, volutpat odit ante molestie libero lectus mi, vestibulum suspendisse.</p>
+								</div><!-- End of caption. -->
+							</div><!-- End of thumbnail. -->
+						</div><!-- End of col-6. -->		
+					</div><!-- End of thumbnails row. -->
+					
+				</div><!-- End of videos row. -->
+			</div><!-- End of videos container -->
+			
+			<!-- Location. -->
+			<div class="col-md-12 row" id="locations_container">
+				<h2 class="header"><img src="decorative-line.png"><br/><span class="dropcap">L</span>ocation</h2>
+				<div class="row" id="location">
+				
+					<!-- Address. -->
+					<div class="thumbnails" id="map">
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<!-- Restaurant Address. -->
+								<address>
+									<strong>Brad's BBQ Pit</strong><br/>
+									2120 Voorhees Town Center<br/>
+									Voorhees Township, NJ 08043<br/>
+									<abbr title="phone">P:</abbr> (888) 555-5703<br/>
+									<abbr title="phone">P:</abbr> (856) 555-7890<br/>
+									Free Valet Parking available 7 days a week.<br/>
+								</address>
+								
+								<div id="hours">
+									<strong>Restaurant Hours (Kitchen & Bar)</strong><br/>
+									<abbr title="wkdyhours">M-Th:</abbr>11:30AM - 10:00PM<br/>
+									<abbr title="wkndhours">F-Sat:</abbr>11:30AM - 11:00PM<br/>
+									<abbr title="sundhours">Sunday:</abbr>4:30PM - 10:00PM<br/>
+								</div><!-- End of hours. -->
+								
+								<br/>
+								
+								<!-- The owner. -->
+								<address>
+									<strong>Contact Brad?</strong><br>
+									<abbr title="phone">P:</abbr> (856) 555-7892<br/>									
+									<a href="mailto:#">brad@email.com</a>
+								</address>
+								
+								<!-- Special events. -->
+								<address>
+									<strong>Special Events</strong><br>
+									Ms. Sylvia Swann<br/>
+									<abbr title="phone">P:</abbr> (856) 555-7894<br/>
+									<a href="mailto:#">sylvia.swann@email.com</a><br/>
+								</address>
+								
+								<!-- Employment. -->
+								<address>
+									<strong>Restaurant Employment</strong><br/>
+									Les (maître d'hôtel)<br/>
+									<a href="mailto:#">les@email.com</a>
+								</address>
+								
+							</div><!-- End of thumbnail class. -->
+						</div><!-- End of col-md-4. -->
+					</div><!-- End of thumbnails class. -->
+					
+					<!-- Map. -->
+					<div class="thumbnails" id="address">
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<div id="map-canvas" height="100%" width="100%"></div>
+							</div><!-- End of thumbnail class. -->
+						</div><!-- End of col-md-4. -->
+					</div><!-- End of thumbnails class. -->		
+					
+					<!-- Directions. -->
+					<div class="thumbnails">
+						<div class="col-md-4">
+							<div class="thumbnail">
+							
+								<!-- From Center City, Philadelphia. -->
+								<div class="directions">
+									<strong>From Center City, Philadelphia (20 mins.)</strong><br/>
+									<div class="directions-desc">
+										Ben Franklin Bridge to Route 70 East. Follow signs for right turn onto South Springdale Road. Continue straight passing through Evesham Road intersection. Cross over Route 561 at next traffic light continuing straight on what becomes White Horse Road. Travel to 3rd traffic light and turn right onto Echelon Road. Follow Echelon Road 0.7 miles to Town Center Blvd. Turn left onto Town Center Blvd. 
+									</div><!-- End of directions-desc class. -->
+								</div><!-- End of directions class. -->
+								<br/>
+								
+								<!-- From Atlantic City. -->
+								<div class="directions">
+									<strong>From Atlantic City (55 mins.)</strong><br/>
+									<div class="directions-desc">
+										Atlantic City Expressway to route 73 North-pass Walker Avenue and Route 30 exits, continuing towards Marlton onto Evesham Road. Continue straight to Springdale Road intersection (Shop Rite on right) make left turn.  Cross over Route 561 at next traffic light continuing straight on what becomes White Horse Road. Travel to 3rd traffic light and turn right onto Echelon Road. Follow Echelon Road 0.7 miles to Town Center Blvd. Turn left onto Town Center Blvd. 
+									</div><!-- End of directions-desc class. -->
+								</div><!-- End of directions class. -->									
+								<br/>
+								
+								<!-- From New York City. -->
+								<div class="directions">
+									<strong>From New York City (1 hour, 30 mins.)</strong><br/>
+									<div class="directions-desc">
+										New Jersey Turnpike south to Exit 4 (route 73 south). Continue on route 73 South crossing through route 70 intersections. Proceed 1.2 miles past Route 70 turning right onto Evesham Road (at Bradley Funeral Home ) Continue straight to Springdale Road intersection, make left turn.  Cross over Route 561 at next traffic light continuing straight on what becomes White Horse Road. Travel to 3rd traffic light and turn right onto Echelon Road. Follow Echelon Road 0.7 miles to Town Center Blvd. Turn left onto Town Center Blvd. 
+									</div><!-- End of directions-desc class. -->
+								</div><!-- End of directions class. -->
+								<br/>
+								
+								<!-- From South Philadelphia. -->
+								<div class="directions">
+									<strong>From South Philadelphia (20 mins.)</strong><br/>
+									<div class="directions-desc">
+										Walt Whitman Bridge stay right to exit 1-B merge right onto I 295 North–Trenton.  Take the CR-561 E exit, EXIT 32, toward Voorhees/Gibbsboro.  Turn slight right onto Haddonfield-Berlin Rd and follow for 1.7 miles.  Turn right onto Somerdale Road. Travel 0.7 miles and turn left onto Echelon Rd. Turn right onto Town Center Blvd
+									</div><!-- End of directions-desc class. -->
+								</div><!-- End of directions class. -->		
+								
+							</div><!-- End of thumbnail class. -->
+						</div><!-- End of col-md-4. -->
+					</div><!-- End of thumbnails class. -->
+				</div><!-- End of location id. -->
+			</div><!-- End of location_container id. -->
+			
+		</div><!-- End of contents. -->
+	</div><!-- End of container class. -->
+
+	<!-- Footer. -->
+	<footer>
+		<div class="footer col-sm-12">
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>Copyright &copy; 2013</h6>
+				</div><!-- End of col-sm-2. -->
+				
+				<div class="col-sm-2">
+					<h6>About Us</h6>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				</div><!-- End of col-sm-2. -->
+					
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="#menu">menu</a></li>
+						<li><a href="#features_container">your palace</a></li>
+						<li><a href="#videos_container">learn</a></li>
+						<li><a href="#locations_container">location</a></li>
+						<li class="hidden"></li>
+					</ul><!-- End of unstyled. -->
+				</div><!-- End of col-sm-2.  -->
+						
+				<div class="col-sm-2">
+					<h6>Follow Us</h6>
+					<ul class="unstyled">
+						<li><a href="http://www.twitter.com">Twitter</a></li>
+						<li><a href="http://www.facebook.com">Facebook</a></li>
+						<li><a href="http://www.linkedin.com">LinkedIn</a></li>
+						<li><a href="http://www.youtube.com">YouTube</a></li>
+					</ul><!-- End of unstyled. -->			
+				</div><!-- End of col-sm-2. -->
+
+				<div class="col-sm-2">
+					<h6>Coded by Kyril J.</h6>			
+				</div><!-- End of col-sm-2. -->	
+			</div><!-- End of row. -->
+		</div><!-- End of footer class. -->
+	</footer>
+		
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+	
+
+	<script type="text/javascript">
+		// Parallax effect.
+		var ypos, header;
+		function parallex(){
+			ypos = window.pageYOffset;
+			header = document.getElementById('header');
+			header.style.top = ypos * .4 + 'px';
+		}
+		
+		window.addEventListener('scroll', parallex);
+		
+		// Close bootstrap's dropdown menu after clicking. 
+		$(function() {
+			$('div.collapse ul.nav li a').each(function() {
+				$(this).on("click", function () {
+					var $obj = $($(this).parents('.in')[0]);
+					$obj.animate({'height': '1px'}, function() {
+						$obj.removeClass('in').addClass('collapse');
+					});
+				});
+			});
+		});
+		
+		// Assigns gray background on navbar after scrolldown from home. 
+		var a = $(".navbar").offset().top;
+		$(document).scroll(function(){
+			if($(this).scrollTop() > a)
+			{   
+			   $('.navbar').css({"background":"#660000"});
+			} else {
+			   $('.navbar').css({"background":"transparent"});
+			}
+		});
+	
+	
+	</script>
+
+
+	</body>
+</html>
+
