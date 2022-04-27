@@ -1,2 +1,2 @@
 # restaurant-website
-Restaurant website that utlizies Bootstrap, CSS Animation and JQuery maps.
+Restaurant website that utilizies Bootstrap, CSS Animation and JQuery maps.
